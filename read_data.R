@@ -12,10 +12,10 @@ setwd("~/COURSERA/JHU-Data Science Specialization/GIT BASH/ExData_Plotting1")
 
 ###Download the data###
 
-#url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
-#download.file(url,destfile = "electric.zip",method="wininet",mode="wb")
+url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+download.file(url,destfile = "electric.zip",method="wininet",mode="wb")
 #Unzip the files
-#unzip("electric.zip")
+unzip("electric.zip")
 
 #Read the data, labeling the variables
 electric<-read.table("household_power_consumption.txt", sep = ";", dec=".", na.strings = "?",

@@ -10,6 +10,9 @@
 setwd("~/COURSERA/JHU-Data Science Specialization/GIT BASH/ExData_Plotting1")
 
 #code for reading the data
+#the "read_data.R" file is avaliable in this repository and it contains the
+#complete code used to download and unzip the data, and to create the
+#"electric_subset" dataset used here
 source("read_data.R")
 
 #construct the "Global Active Power" plot 1

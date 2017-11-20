@@ -10,6 +10,9 @@
 setwd("~/COURSERA/JHU-Data Science Specialization/GIT BASH/ExData_Plotting1")
 
 #code for reading the data
+#the "read_data.R" file is avaliable in this repository and it contains the
+#complete code used to download and unzip the data, and to create the
+#"electric_subset" dataset used here
 source("read_data.R")
 
 
@@ -27,7 +30,7 @@ with(electric_subset,lines(Time,Sub_metering_2,col="red",lwd=1.8))
 with(electric_subset,lines(Time,Sub_metering_3,col="blue",lwd=1.8))
 
 #legend
-legend("topright",col=c("grey40","red","blue"),lty=1,
+legend("topright",col=c("black","red","blue"),lty=1,
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex =0.9)
 
 #restablish my locale 
