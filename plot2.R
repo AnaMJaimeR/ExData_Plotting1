@@ -18,7 +18,6 @@ Sys.setlocale("LC_TIME","English")
 
 #construct the "Global Active Power" plot 2
 windows()
-par(mar=c(4,6,2,2))
 with(electric_subset,plot(Time,Global_active_power,xlab="",ylab="Global Active Power (kilowatts)",
                           type="n"))
 with(electric_subset,lines(Time,Global_active_power))

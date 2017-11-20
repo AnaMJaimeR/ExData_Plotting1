@@ -18,12 +18,11 @@ Sys.setlocale("LC_TIME","English")
 
 #construct the "Global Active Power" plot 2
 windows()
-par(mar=c(4,6,2,2))
 with(electric_subset,plot(Time,Sub_metering_1,xlab="",
                           ylab="Energy sub metering",type="n"))
 
 #subsets by colors
-with(electric_subset,lines(Time,Sub_metering_1,col="grey40",lwd=1.8))
+with(electric_subset,lines(Time,Sub_metering_1,col="black",lwd=1.8))
 with(electric_subset,lines(Time,Sub_metering_2,col="red",lwd=1.8))
 with(electric_subset,lines(Time,Sub_metering_3,col="blue",lwd=1.8))
 
